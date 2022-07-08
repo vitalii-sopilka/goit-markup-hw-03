@@ -1,0 +1,251 @@
+:root {
+  --color-head: #212121;
+  --color-accent: #2196F3;
+  --color-hover: #188CE8;
+  --color-black: #000000;
+  --color-gray: #757575;
+  --color-white: #FFFFFF;
+  --color-team: #F5F4FA;
+  --color-basement: #2F303A;
+  --color-alpha: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-white);
+}
+
+/* Дополнительный класс для снятия подчеркиваний со ссылок */
+.link {
+  text-decoration: none
+}
+
+/* ----------HEADER---------- */
+
+.head-navigation-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--color-accent);
+}
+
+.head-navigation-logo-span {
+  color: var(--color-black);
+}
+
+.head-navigation-list-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--color-head);
+}
+
+/* Подсветка текущей страницы */
+.current {
+  color: var(--color-accent);
+}
+
+.head-navigation-list-link:hover,
+.head-navigation-list-link:focus {
+  color: var(--color-accent);
+}
+
+.head-navigation-contacts-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;  
+  letter-spacing: 0.02em;
+  color: var(--color-gray);
+}
+
+.head-navigation-contacts-link:focus,
+.head-navigation-contacts-link:hover{
+  color: var(--color-accent);
+}
+
+/* ----------ГЕРОЙ---------- */
+
+.hero {
+  background-color: var(--color-basement);
+}
+
+.hero-main {
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.hero-button {
+  font-family: Inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: 0;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+background-color: var(--color-hover);
+}
+
+/* ----------НАШИ ПРИИМЦЩЕСТВА---------- */
+
+.title-hide {
+  display: none;
+}
+
+.benefits-list-item-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-head);
+}
+
+.benefits-list-item-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-gray);
+}
+
+/* ----------ЧЕМ МЫ ЗАНИМАЕМСЯ---------- */
+
+.doing-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-head);
+}
+
+/* ----------НАША КОМАНДА---------- */
+
+.our-team{
+  background-color: var(--color-team);
+  }
+
+.team-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-head);
+}
+
+.team-list-item {
+  background-color: var(--color-white);
+}
+
+.team-list-item-teammate {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-head);
+}
+
+.team-list-item-position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-gray);
+}
+
+/* ----------Портфолио---------- */
+
+.btns-item-klick {
+  font-family: Inherit;
+  font-weight: 500;
+  font-size: 16px;  
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-head);
+  cursor: pointer;
+  border: 0;
+}
+
+/* Подсветка первой кнопки */
+
+.first {
+  color: var(--color-white);
+  background-color: var(--color-accent);
+}
+
+.btns-item-klick:hover,
+.btns-item-klick:focus{
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.portfolio-list-item-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--color-head);
+}
+
+.portfolio-list-item-description {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--color-gray);
+}
+
+/* ----------ПОДВАЛ---------- */
+
+.basement {
+  background-color: var(--color-basement);
+}
+
+.basement-link {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--color-accent);
+}
+
+.basement-link-span{
+  color: var(--color-white);
+}
+
+.basement-adress-post {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-white);
+}
+
+.basement-adress-mt-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-alpha);
+}
+
+.basement-adress-mt-link:hover,
+.basement-adress-mt-link:focus {
+  color: var(--color-accent);
+}
