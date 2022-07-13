@@ -39,6 +39,12 @@ p, h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* ----------HEADER---------- */
 
 .head {
@@ -68,16 +74,17 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .head-navigation-list {
-  padding-bottom: 25px;
-  padding-top: 25px;
   display: block;
   display: flex;
+}
+
+.head-navigation-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .head-navigation-list-link {
   padding-bottom: 25px;
   padding-top: 25px;
-  margin-right: 50px;
   display: block;
   font-weight: 500;
   font-size: 14px;
@@ -85,15 +92,6 @@ p, h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.02em;
   color: var(--color-head);
 }
-
-.head-navigation-list-link + .head-navigation-list-link {
-  margin-left: 50px;
-}
-
-/* 2й вариант */
-/* .head-navigation-list-link:not(:last-child) {
-  margin-left: 50px;
-} */
 
 /* Подсветка текущей страницы */
 .current {
@@ -110,10 +108,15 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-left: auto;
 }
 
+.head-navigation-contacts-item:not(:last-child) {
+  margin-left: 50px;
+}
+
 .head-navigation-contacts-link {
   display: block;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-left: auto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;  
@@ -175,8 +178,18 @@ background-color: var(--color-hover);
 
 /* ----------НАШИ ПРИИМЦЩЕСТВА---------- */
 
+/* Скрытый заголовок */
 .title-hide {
-  display: none;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .benefits {
@@ -188,6 +201,15 @@ background-color: var(--color-hover);
 .benefits-list {
   display: flex;
   justify-content: space-between;
+}
+
+.benefits-list-item {
+  flex-basis: calc(100% / 4 - 30px);
+  min-width: 270px;
+}
+
+.benefits-list-item + .benefits-list-item {
+  margin-left: 30px;
 }
 
 .benefits-list-item-title {
@@ -206,15 +228,10 @@ background-color: var(--color-hover);
   color: var(--color-gray);
 }
 
-.benefits-list-item + .benefits-list-item {
-  min-width: 270px;
-  margin-left: 30px;
-}
-
 /* ----------ЧЕМ МЫ ЗАНИМАЕМСЯ---------- */
 
-.doing-list-item + .doing-list-item{
-  margin-left: 30px;
+.doing {
+  padding-bottom: 94px;
 }
 
 .doing-title {
@@ -230,9 +247,14 @@ background-color: var(--color-hover);
   display: flex;
 }
 
-.doing-list-item + .doing-list-item{
-  margin-left: 30px;
+.doing-list-item:not(:last-child) {
+  margin-right: 30px;
 }
+
+/* 2й вариант */
+/* .doing-list-item + .doing-list-item{
+  margin-left: 30px;
+} */
 
 /* ----------НАША КОМАНДА---------- */
 
@@ -327,7 +349,7 @@ background-color: var(--color-hover);
   background-color: var(--color-accent);
 }
 
-.btns-item-klick:hover,
+.btns-item-klick:hover,ч  ч 
 .btns-item-klick:focus{
   box-shadow: var(--shadows);
   background-color: var(--color-accent);
@@ -345,7 +367,6 @@ background-color: var(--color-hover);
   flex-basis: calc(100% / 3 - 30px);
   margin-top: 30px;
   margin-left: 30px; 
-  outline: 1px solid #EEEEEE;
 }
 
 .portfolio-list-item-title {
@@ -364,6 +385,9 @@ background-color: var(--color-hover);
 
 .portfolio-list-item-content {
   padding: 20px 24px;
+  border-bottom: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
 }
 
 /* ----------ПОДВАЛ---------- */
@@ -391,6 +415,7 @@ background-color: var(--color-hover);
 }
 
 .basement-adress-post {
+  margin-bottom: 9px;
   display: block;
   font-style: normal;
   font-size: 14px;
@@ -400,7 +425,6 @@ background-color: var(--color-hover);
 }
 
 .basement-adress-mt-link {
-  display: block;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -408,8 +432,8 @@ background-color: var(--color-hover);
   color: var(--color-alpha);
 }
 
-.basement-adress-mt-link + .basement-adress-mt-link {
-  margin-top: 9px;
+.basement-adress-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .basement-adress-mt-link:hover,
