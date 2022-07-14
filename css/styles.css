@@ -49,6 +49,7 @@ img {
 
 .head {
   border-bottom: 1px solid #ececec;
+  align-items: center;
 }
 
 .head-navigation {
@@ -57,16 +58,15 @@ img {
 }
 
 .head-navigation-logo {
+  display: block;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--color-accent);
-  display: block;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin-right: 95px;
+  padding: 24px 0 25px 0;
+  margin-right: 93px;
 }
 
 .head-navigation-logo-span {
@@ -83,8 +83,8 @@ img {
 }
 
 .head-navigation-list-link {
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding-bottom: 32px;
+  padding-top: 32px;
   display: block;
   font-weight: 500;
   font-size: 14px;
@@ -109,23 +109,18 @@ img {
 }
 
 .head-navigation-contacts-item:not(:last-child) {
-  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .head-navigation-contacts-link {
   display: block;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin-left: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;  
   letter-spacing: 0.02em;
   color: var(--color-gray);
-}
-
-.head-navigation-contacts-link:first-of-type {
-  margin-right: 50px;
 }
 
 .head-navigation-contacts-link:focus,
@@ -204,8 +199,8 @@ background-color: var(--color-hover);
 }
 
 .benefits-list-item {
-  flex-basis: calc(100% / 4 - 30px);
-  min-width: 270px;
+  flex-basis: calc((100% - 3 * 30px) / 4);
+  /* min-width: 270px; */
 }
 
 .benefits-list-item + .benefits-list-item {
@@ -230,7 +225,7 @@ background-color: var(--color-hover);
 
 /* ----------ЧЕМ МЫ ЗАНИМАЕМСЯ---------- */
 
-.doing {
+.wawd {
   padding-bottom: 94px;
 }
 
