@@ -138,7 +138,8 @@ img {
 }
 
 .hero-main {
-  margin-bottom: 30px;
+  width: 670px;
+  margin: 0 auto 30px auto;
   font-family: 'Roboto';
   font-weight: 900;
   font-size: 44px;
@@ -344,8 +345,8 @@ background-color: var(--color-hover);
   background-color: var(--color-accent);
 }
 
-.btns-item-klick:hover,ч  ч 
-.btns-item-klick:focus{
+.btns-item-klick:hover,
+.btns-item-klick:focus {
   box-shadow: var(--shadows);
   background-color: var(--color-accent);
   color: var(--color-white);
